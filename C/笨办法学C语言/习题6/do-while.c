@@ -1,0 +1,3 @@
+do{
+    CODE;
+}while(TEST);

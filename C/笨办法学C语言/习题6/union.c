@@ -1,0 +1,3 @@
+union NAME{
+    ELEMENTS;
+} [VARIABLE_NAME};

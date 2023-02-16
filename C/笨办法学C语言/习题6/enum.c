@@ -1,0 +1,2 @@
+enum{CONST1, CONST2, CONST3} NAME;
+
