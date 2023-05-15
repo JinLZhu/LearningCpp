@@ -15,17 +15,16 @@ struct Teacher {
 
 void init_members(struct Teacher t[], int arr_len)
 {
-	int random = rand() % 61 + 40;
 	string nameSeed = "ABCDE";
-	string teacher_Name = "½ÌÊ¦_";
-	string student_Name = "Ñ§Éú_";
+	string teacher_Name = "æ•™å¸ˆ_";
+	string student_Name = "å­¦ç”Ÿ_";
 	for (int i = 0; i < arr_len; i++) {
 		t[i].teacher_name = teacher_Name;
 		t[i].teacher_name += nameSeed[i];
 		for (int j = 0; j < 5; j++) {
 			t[i].Stu[j].Stu_name = student_Name;
 			t[i].Stu[j].Stu_name += nameSeed[j];
-			t[i].Stu[j].score = random;
+			t[i].Stu[j].score = rand() % 61 + 40;
 		}
 	}
 }
@@ -33,10 +32,10 @@ void init_members(struct Teacher t[], int arr_len)
 void print_members(struct Teacher t[], int arr_len)
 {
 	for (int i = 0; i < arr_len; i++) {
-		cout << t[i].teacher_name << " Çé¿ö£º" << endl;
+		cout << t[i].teacher_name << "ï¼š" << endl;
 		for (int j = 0; j < 5; j++) {
-			cout << t[i].Stu[j].Stu_name << ":" << endl;
-			cout << "³É¼¨£º" << t[i].Stu[j].score << endl;
+			cout << "\t" << t[i].Stu[j].Stu_name;
+			cout << "æˆç»©ï¼š" << t[i].Stu[j].score << endl;
 		}
 	}
 }
@@ -45,7 +44,6 @@ void print_members(struct Teacher t[], int arr_len)
 int main()
 {
 	srand((unsigned int)time(NULL));
-
 	struct Teacher struct_Teacher[3];
 	int arr_len = sizeof(struct_Teacher) / sizeof(Teacher);
 
@@ -57,11 +55,11 @@ int main()
 
 /*
 Teacher teacher_A[3];
-string Teacher_name[3] = { "ÀÏÊ¦0", "ÀÏÊ¦1", "ÀÏÊ¦2" };
+string Teacher_name[3] = { "è€å¸ˆ0", "è€å¸ˆ1", "è€å¸ˆ2" };
 string Student_name[3][5] = {
-	{ "Ñ§Éú0-1", "Ñ§Éú0-2", "Ñ§Éú0-3", "Ñ§Éú0-4", "Ñ§Éú0-5" },
-	{ "Ñ§Éú1-1", "Ñ§Éú1-2", "Ñ§Éú1-3", "Ñ§Éú1-4", "Ñ§Éú1-5" },
-	{ "Ñ§Éú2-1", "Ñ§Éú2-2", "Ñ§Éú2-3", "Ñ§Éú2-4", "Ñ§Éú2-5" }
+	{ "å­¦ç”Ÿ0-1", "å­¦ç”Ÿ0-2", "å­¦ç”Ÿ0-3", "å­¦ç”Ÿ0-4", "å­¦ç”Ÿ0-5" },
+	{ "å­¦ç”Ÿ1-1", "å­¦ç”Ÿ1-2", "å­¦ç”Ÿ1-3", "å­¦ç”Ÿ1-4", "å­¦ç”Ÿ1-5" },
+	{ "å­¦ç”Ÿ2-1", "å­¦ç”Ÿ2-2", "å­¦ç”Ÿ2-3", "å­¦ç”Ÿ2-4", "å­¦ç”Ÿ2-5" }
 };
 */
 //int arr_len = sizeof(Teacher_name) / sizeof(string);
