@@ -1,4 +1,4 @@
 #include <iostream>
 using namespace std;
 
-void Add_Contacts(struct_contacts, arr_len);
+void Add_Contacts(struct contacts s[], int arr_len);
