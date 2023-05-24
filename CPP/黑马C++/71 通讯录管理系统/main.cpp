@@ -60,7 +60,7 @@ int main()
         {
             case 1:
                 //添加联系人
-                cout << "1" << endl;
+                //cout << "1" << endl;
                 Add_Contacts(struct_contacts, arr_len); 
                 break;
 
