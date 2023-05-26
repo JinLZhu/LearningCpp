@@ -13,16 +13,7 @@
  */
 #include "Add_Contacts.h"
 #include <iostream>
-#include <string>
 using namespace std;
-
-struct contacts {
-    string string_name;
-    bool bool_gender;
-    int int_contactsAge;
-    long phone;
-    string string_address;
-};
 
 int func_ShowMenu(){
     cout << 

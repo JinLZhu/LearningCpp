@@ -1,4 +1,5 @@
 #include "Add_Contacts.h"
+#include <string>
 using namespace std;
 
 void Add_Contacts(struct contacts s[], int arr_len){
