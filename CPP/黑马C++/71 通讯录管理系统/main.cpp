@@ -11,11 +11,11 @@
     *退出通讯录:退出当前使用的通讯录
  *
  */
-#include "Add_Contacts.h"
+#include "main.h"
 #include <iostream>
 using namespace std;
 
-int func_ShowMenu(){
+void func_ShowMenu(int * const int_UserChoise){
     cout << 
     "****************************" << "\n"
     "*****  1、添加联系人  *****" << "\n"
@@ -32,7 +32,7 @@ int func_ShowMenu(){
     cout << "输入功能编号：";
     cin >> int_UserInput;
 
-    return int_UserInput;
+    //return int_UserInput;
 }
 
 int main()
@@ -40,11 +40,12 @@ int main()
     struct contacts struct_contacts[1000];
     int arr_len = sizeof(struct_contacts) / sizeof(contacts);
 
-    cout << arr_len << endl;
+    //cout << arr_len << endl;
 
     for(;;){
-        int int_UserChoise = 0;
-        int_UserChoise = func_ShowMenu();
+        int * const int_UserChoise = NULL;
+        //int_UserChoise = func_ShowMenu();
+        func_ShowMenu(int_UserChoise);
 
         //system("clear");
         switch (int_UserChoise)
@@ -56,7 +57,8 @@ int main()
                 break;
 
             case 2:
-                cout << "2" << endl;
+                //cout << "2" << endl;
+                Show_Contacts(struct_contacts, arr_len);
                 break;
 
             case 3:
@@ -84,7 +86,6 @@ int main()
                 cout << "输入正确选项!" << endl;
                 continue;
         }
-        //system("clear");
     }
 
     return 0;

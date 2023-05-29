@@ -1,5 +1,4 @@
-#include "Add_Contacts.h"
-#include <string>
+#include "main.h"
 using namespace std;
 
 void Add_Contacts(struct contacts s[], int arr_len){
@@ -13,22 +12,19 @@ void Add_Contacts(struct contacts s[], int arr_len){
 
             cout << "输入姓名：";
             cin >> s[i].string_name;
-            cout << "\n输入性别：";
+            cout << "输入性别：";
             cin >> s[i].bool_gender;
-            cout << "\n输入年龄：";
+            cout << "输入年龄：";
             cin >> s[i].int_contactsAge;
-            cout << "\n联系方式：";
+            cout << "联系方式：";
             cin >> s[i].phone;
-            cout << "\n现居住地：";
+            cout << "现居住地：";
             cin >> s[i].string_address;
-
-            break;
         }
 
-        cout << s[i].string_name << endl;
-        cout << s[i].bool_gender << endl;
-        cout << s[i].int_contactsAge << endl;
-        cout << s[i].phone << endl;
-        cout << s[i].string_address << endl;
+        /*
+        */
+
+        break;
     }
 }
