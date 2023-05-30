@@ -15,7 +15,7 @@
 #include <iostream>
 using namespace std;
 
-void func_ShowMenu(int * const int_UserChoise){
+int func_ShowMenu(){
     cout << 
     "****************************" << "\n"
     "*****  1、添加联系人  *****" << "\n"
@@ -24,7 +24,7 @@ void func_ShowMenu(int * const int_UserChoise){
     "*****  4、查找联系人  *****" << "\n"
     "*****  5、修改联系人  *****" << "\n"
     "*****  6、清空联系人  *****" << "\n"
-    "*****  0、退出联系人  *****" << "\n"
+    "*****  0、退出本程序  *****" << "\n"
     "****************************" << "\n"
     << endl;
 
@@ -32,7 +32,7 @@ void func_ShowMenu(int * const int_UserChoise){
     cout << "输入功能编号：";
     cin >> int_UserInput;
 
-    //return int_UserInput;
+    return int_UserInput;
 }
 
 int main()
@@ -43,9 +43,8 @@ int main()
     //cout << arr_len << endl;
 
     for(;;){
-        int * const int_UserChoise = NULL;
-        //int_UserChoise = func_ShowMenu();
-        func_ShowMenu(int_UserChoise);
+        int int_UserChoise = 0;
+        int_UserChoise = func_ShowMenu();
 
         //system("clear");
         switch (int_UserChoise)
