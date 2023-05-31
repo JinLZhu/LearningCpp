@@ -22,11 +22,10 @@ void Add_Contacts(struct contacts s[], int arr_len){
             cin >> s[i].string_address;
         }
 
-        char char_UserReInput = '';
+        char char_UserReInput;
         cout << "是否继续添加？(Y/N)";
         cin >> char_UserReInput;
         if ((char_UserReInput == 'Y') or (char_UserReInput == 'y')){
-                            
         }
         break;
     }
