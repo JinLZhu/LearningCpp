@@ -4,14 +4,10 @@ using namespace std;
 void Add_Contacts(struct contacts s[], int arr_len){
     cout << "增加联系人" << endl;    
     for (int i = 0; i < arr_len; ++i){
-        if (i == arr_len - 1){
-            cout << "通讯录已满！" << endl;
-            break;
-        }
-
         if (s[i].string_name != ""){
             continue;
         }
+
         cout << "输入姓名：";
         cin >> s[i].string_name;
         cout << "输入性别：";
@@ -26,8 +22,12 @@ void Add_Contacts(struct contacts s[], int arr_len){
         char char_UserReInput;
         cout << "是否继续添加？(Y/N)";
         cin >> char_UserReInput;
-        if ((char_UserReInput == 'N') or (char_UserReInput == 'n')){
+        if ((char_UserReInput == 'N') || (char_UserReInput == 'n')){
             break;
-        }
+        } else if (i == arr_len - 1){
+            cout << "通讯录已满，即将返回！" << endl;
+            Pause_Some_Times(3);
+            break;
+        } 
     }
 }

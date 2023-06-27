@@ -15,7 +15,9 @@ void Show_Contacts(struct contacts s[], int arr_len){
         if (s[i + 1].string_name == ""){
             break;
         }
-
-        system("pause");
     }
+    cout << "按任意键返回！" << endl;
+    cin.clear();
+    cin.sync();
+    cin.get();
 }

@@ -16,6 +16,7 @@
 using namespace std;
 
 int func_ShowMenu(){
+    system("clear");
     cout << 
     "****************************" << "\n"
     "*****  1、添加联系人  *****" << "\n"
@@ -37,9 +38,10 @@ int func_ShowMenu(){
 
 int main()
 {
-    struct contacts struct_contacts[1000];
+    //struct contacts struct_contacts[1000];
+    struct contacts struct_contacts[3];
     int arr_len = sizeof(struct_contacts) / sizeof(contacts);
-    //cout << arr_len << endl;
+
 
     for(;;){
         int int_UserChoise = 0;
@@ -48,8 +50,7 @@ int main()
         switch (int_UserChoise)
         {
             case 1:
-               //添加联系人
-                //cout << "1" << endl;
+                //添加联系人
                 Add_Contacts(struct_contacts, arr_len); 
                 break;
 

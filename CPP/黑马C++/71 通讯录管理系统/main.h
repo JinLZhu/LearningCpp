@@ -11,3 +11,4 @@ struct contacts {
 
 void Add_Contacts(struct contacts s[], int arr_len);
 void Show_Contacts(struct contacts[], int arr_len);
+void Pause_Some_Times(int int_second);
