@@ -39,18 +39,16 @@ int main()
 {
     struct contacts struct_contacts[1000];
     int arr_len = sizeof(struct_contacts) / sizeof(contacts);
-
     //cout << arr_len << endl;
 
     for(;;){
         int int_UserChoise = 0;
         int_UserChoise = func_ShowMenu();
 
-        //system("clear");
         switch (int_UserChoise)
         {
             case 1:
-                //添加联系人
+               //添加联系人
                 //cout << "1" << endl;
                 Add_Contacts(struct_contacts, arr_len); 
                 break;
