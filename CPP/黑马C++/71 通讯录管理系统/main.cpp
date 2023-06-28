@@ -59,9 +59,14 @@ int main()
                 Show_Contacts(struct_contacts, arr_len);
                 break;
 
-            case 3:
-                cout << "3" << endl;
+            case 3:{
+                //cout << "3" << endl;
+                string s_name;
+                cout << "输入要删除的名字：";
+                cin >> s_name;
+                Delete_Contacts(struct_contacts, s_name, arr_len);
                 break;
+            }
 
             case 4:
                 cout << "4" << endl;
