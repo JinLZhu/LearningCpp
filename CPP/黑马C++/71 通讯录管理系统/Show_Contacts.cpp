@@ -19,5 +19,6 @@ void Show_Contacts(struct contacts s[], int arr_len){
     cout << "按任意键返回！" << endl;
     cin.clear();
     cin.sync();
-    cin.get();
+    std::cin.get();
+    std::cin.get();
 }
