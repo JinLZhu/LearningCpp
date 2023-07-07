@@ -12,4 +12,4 @@ struct contacts {
 void Add_Contacts(struct contacts s[], int arr_len);
 void Show_Contacts(struct contacts s[], int arr_len);
 void Pause_Some_Times(int int_second);
-void Delete_Contacts(struct contacts s[], std::string string_name, int arr_len);
+void Delete_Contacts(struct contacts s[], std::string string_name, int arr_len, struct contacts s_e[]);

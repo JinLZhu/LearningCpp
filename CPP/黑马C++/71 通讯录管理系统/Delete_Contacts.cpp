@@ -1,15 +1,16 @@
 #include "main.h"
 
-void Delete_Contacts(struct contacts s[], std::string s_name, int arr_len){
+void Delete_Contacts(struct contacts s[], std::string s_name, int arr_len, struct contacts s_e[]){
+    std::cout << "s_name is " << s_name << std::endl;
+    std::cout << "arr_len is " << arr_len << std::endl;
     for(int i = 0; i < arr_len; ++i){
+        std::cout << "s[i].string_name is " << s[i].string_name << std::endl;
         if (s[i].string_name == s_name){
             if (i = arr_len - 1){
-                s[i].string_name = "";
-                s[i].bool_gender = 0;
-                s[i].int_contactsAge = 0;
-                s[i].phone;
-                s[i].string_address = "";
+                std::cout << "X" << std::endl;
+                s[i] = s_e[0];
             } else {
+                std::cout << "Y" << std::endl;
                 s[i] = s[i + 1];
                 /*
                 if (i <= arr_len - 2){
@@ -17,6 +18,8 @@ void Delete_Contacts(struct contacts s[], std::string s_name, int arr_len){
                 }
                 */
             }
+            std::cin.get();
+            std::cin.get();
         }
     }
 }

@@ -13,11 +13,10 @@
  */
 #include "main.h"
 #include <iostream>
-using namespace std;
 
 int func_ShowMenu(){
     system("clear");
-    cout << 
+    std::cout << 
     "****************************" << "\n"
     "*****  1、添加联系人  *****" << "\n"
     "*****  2、显示联系人  *****" << "\n"
@@ -27,11 +26,11 @@ int func_ShowMenu(){
     "*****  6、清空联系人  *****" << "\n"
     "*****  0、退出本程序  *****" << "\n"
     "****************************" << "\n"
-    << endl;
+    << std::endl;
 
     int int_UserInput = 0;
-    cout << "输入功能编号：";
-    cin >> int_UserInput;
+    std::cout << "输入功能编号：";
+    std::cin >> int_UserInput;
 
     return int_UserInput;
 }
@@ -40,6 +39,7 @@ int main()
 {
     //struct contacts struct_contacts[1000];
     struct contacts struct_contacts[3];
+    struct contacts struct_EmptyContacts[1];
     int arr_len = sizeof(struct_contacts) / sizeof(contacts);
 
 
@@ -61,32 +61,28 @@ int main()
 
             case 3:{
                 //cout << "3" << endl;
-                string s_name;
-                cout << "输入要删除的名字：";
-                cin >> s_name;
-                Delete_Contacts(struct_contacts, s_name, arr_len);
+                std::string s_name;
+                std::cout << "输入要删除的联系人姓名：";
+                std::cin >> s_name;
+                Delete_Contacts(struct_contacts, s_name, arr_len, struct_EmptyContacts);
                 break;
             }
 
             case 4:
-                cout << "4" << endl;
                 break;
 
             case 5:
-                cout << "5" << endl;
                 break;
 
             case 6:
-                cout << "6" << endl;
                 break;
 
             case 0:
-                cout << "0" << endl;
                 return 0;
                 break;
 
             default:
-                cout << "输入正确选项!" << endl;
+                std::cout << "输入正确选项!" << std::endl;
                 continue;
         }
     }
