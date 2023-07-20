@@ -1,0 +1,4 @@
+void Search_Contacts(struct contacts s[], int arr_len)
+{
+
+}
