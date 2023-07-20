@@ -6,12 +6,12 @@ void Delete_Contacts(struct contacts s[], std::string s_name, int arr_len, struc
         if (s[i].string_name == s_name){
             for (int j=i; j < arr_len; ++j){
                 if (j == arr_len - 1){
-                    s[i] = s_e[0];
+                    s[j] = s_e[0];
                     break;
                 } else {
                     s[i] = s[i + 1];
                 }
-            }
+            } 
         }
     }
 }
