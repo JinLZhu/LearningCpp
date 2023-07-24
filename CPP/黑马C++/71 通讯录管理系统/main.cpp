@@ -69,11 +69,13 @@ int main()
             }
 
             case 4:
-                //std::cout << "4" << std::endl;
+                /* 
+                 * //std::cout << "4" << std::endl;
                 std::string search_name;
                 std::cout << "输入查找联系人姓名：";
                 std::cin >> search_name;
                 Search_Contacts(struct_contacts, arr_len, search_name);
+                */
                 break;
 
             case 5:
