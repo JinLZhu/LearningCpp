@@ -14,3 +14,4 @@ void Show_Contacts(struct contacts s[], int arr_len);
 void Pause_Some_Times(int int_second);
 void Delete_Contacts(struct contacts s[], std::string string_name, int arr_len, struct contacts s_e[]);
 void Search_Contacts(struct contacts s[], int arr_len, std::string search_name);
+void Modify_Contacts(struct contacts s[], int arr_len, std::string modify_name);
