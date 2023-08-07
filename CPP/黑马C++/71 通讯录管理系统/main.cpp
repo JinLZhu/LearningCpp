@@ -62,7 +62,7 @@ int main()
             case 3:{
                 //cout << "3" << endl;
                 std::string s_name;
-                std::cout << "输入要删除的联系人姓名：";
+                std::cout << "想要删除的联系人姓名：";
                 std::cin >> s_name;
                 Delete_Contacts(struct_contacts, s_name, arr_len, struct_EmptyContacts);
                 break;
@@ -71,17 +71,21 @@ int main()
             case 4:{
                 //std::cout << "4" << std::endl;
                 std::string search_name;
-                std::cout << "想要查找联系人姓名：";
+                std::cout << "想要查找的联系人姓名：";
                 std::cin >> search_name;
                 Search_Contacts(struct_contacts, arr_len, search_name);
                 break;
             }
 
             case 5:{
-                std::modify_name;
+                std::string modify_name;
                 std::cout << "想要修改的联系人姓名：";
                 std::cin >> modify_name;
-                Modify_Contacts(struct_contacts, arr_len, modify_name);
+                int isExsitContact = 0;
+                isExsitContact = Search_Contacts(struct_contacts, arrlen, modify_name);
+                if (isExsitContact){
+                    Modify_Contacts(struct_contacts, arr_len, modify_name);
+                }
                 break;
             }
 
