@@ -88,6 +88,7 @@ int main()
                 } else {
                     std::cout << "联系人不存在！" << std::endl;
                 }
+                isExsitContact = 0;
                 break;
             }
 
