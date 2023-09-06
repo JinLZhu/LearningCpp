@@ -84,7 +84,7 @@ int main()
                 int isExsitContact = 0;
                 isExsitContact = Search_Contacts(struct_contacts, arrlen, modify_name);
                 if (isExsitContact){
-                    Modify_Contacts(struct_contacts, arr_len, modify_name);
+                    Modify_Contacts(struct_contacts, arr_len, modify_name, isExsitContact);
                 } else {
                     std::cout << "联系人不存在！" << std::endl;
                 }
