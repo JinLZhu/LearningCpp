@@ -82,11 +82,12 @@ int main()
                 std::cout << "想要修改的联系人姓名：";
                 std::cin >> modify_name;
                 int isExsitContact = 0;
-                isExsitContact = Search_Contacts(struct_contacts, arrlen, modify_name);
+                isExsitContact = Search_Contacts(struct_contacts, arr_len, modify_name);
                 if (isExsitContact){
-                    Modify_Contacts(struct_contacts, arr_len, modify_name, isExsitContact);
+                    Modify_Contacts(struct_contacts, isExsitContact);
                 } else {
                     std::cout << "联系人不存在！" << std::endl;
+                    Pause_Some_Times(3);
                 }
                 isExsitContact = 0;
                 break;
