@@ -12,6 +12,8 @@ void Modify_Contacts(struct contacts s[], int isExsitContact)
          std::cin >> s[isExsitContact].phone;
          std::cout << "现居住地：";
          std::cin >> s[isExsitContact].string_address;
-    
+
+
          std::cout << "修改完成！" << std::endl;
+         
 }
