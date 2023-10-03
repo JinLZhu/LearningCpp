@@ -95,11 +95,11 @@ int main()
 
             case 6:{
                 //清空通讯录中所有信息
-                char char_UserChoise = '';
+                char char_UserChoise; 
                 std::cout << "确认要清空通讯录(按0取消，任意键为确认)？";
                 std::cin >> char_UserChoise;
-                if (char_UserChoise != '0' or char_UserChoise != 0){
-                    Erase_Contacts(struct_EmptyContacts, arr_len);
+                if (char_UserChoise != 0){
+                    Erase_Contacts(struct_contacts, struct_EmptyContacts, arr_len);
                 }
                 break;
             }
