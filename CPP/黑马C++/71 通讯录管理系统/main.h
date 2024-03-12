@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#define MAX 1000
 
 struct contacts {
     std::string string_name = "";
@@ -8,6 +9,11 @@ struct contacts {
     long phone = 0;
     std::string string_address = "";
 };
+
+struct address_books {
+    struct contacts contactArray[MAX];
+    int m_Size;
+}
 
 void Add_Contacts(struct contacts s[], int arr_len);
 void Show_Contacts(struct contacts s[], int arr_len);
