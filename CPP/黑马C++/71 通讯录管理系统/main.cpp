@@ -105,6 +105,7 @@ int main()
             }
 
             case 0:
+                std::cout << "欢迎下次使用！" << std::endl;
                 return 0;
                 break;
 
