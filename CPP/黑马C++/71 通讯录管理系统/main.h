@@ -10,10 +10,12 @@ struct contacts {
     std::string string_address = "";
 };
 
+/*
 struct address_books {
     struct contacts contactArray[MAX];
     int m_Size;
 }
+*/
 
 void Add_Contacts(struct contacts s[], int arr_len);
 void Show_Contacts(struct contacts s[], int arr_len);
