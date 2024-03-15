@@ -14,7 +14,7 @@ struct contacts {
 struct address_books {
     struct contacts contactArray[MAX];
     int m_Size;
-}
+};
 */
 
 void Add_Contacts(struct contacts s[], int arr_len);
