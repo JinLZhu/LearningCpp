@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-int main()
+int my_main()
 {
     string user_name;
     cout << "Please enter your first name: ";
