@@ -51,5 +51,30 @@ int main()
     cout << "string \t\t" << "所占用字节数：" << sizeof(string);
     cout << "Type: \t\t" << "************size**************" << endl;
 
+    //枚举类型
+    enum color {red, green, blue} c;
+    c = blue;
+    //red == 0, green == 5, blue == 6
+    enum _color {red, green=5, blue}
+
+    //类型转换
+    int i = 10;
+    float f = static_cast<float>(i);    //静态将int转换为float
+    
+    class Base{}
+    class Derived : public Base {};
+    Base* ptr_base = new Derived;
+    Derived* ptr_derived = dynamic_cast<Derived>(ptr_base);
+    //将基类指针转换为派生类指针
+
+    //常量转换
+    const int j = 10;
+    int& r = const_cast<int&>(j); //常量转换，将const int转换为int
+
+    //重新解释转换
+    int k = 10;
+    float f = reinterpret_cast<float&>(k);
+    // 重新解释转换，将int转换为float
+
     return 0;
 }
