@@ -1,5 +1,10 @@
 #include <iostream>
 using namespace std;
+/*
+ * 在同一个作用域内，可以声明几个功能类似的同名函数。
+ * 但是这些同名函数的形参（指参数的个数、类型或者顺序）必须不同。
+ * 不能仅通过返回类型不同来重载函数
+ */
 
 class printData
 {
