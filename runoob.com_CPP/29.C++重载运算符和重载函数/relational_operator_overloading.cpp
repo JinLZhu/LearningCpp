@@ -1,3 +1,4 @@
+#include <cfloat>
 #include <iostream>
 using namespace std;
 
@@ -21,6 +22,14 @@ class Distance
             cout << "F: " << feet << " I: " << inches << endl;
         }
         // 重载负运算符（ - ）
+        Distance operator- ()
+        {
+            feet = -feet;
+            inches = -inches;
+            return Distance(feet, inches);
+        }
+
+        // 重载负运算符（ < ）
         bool operator< (const Distance& d)
         {
             if( feet < d.feet )
