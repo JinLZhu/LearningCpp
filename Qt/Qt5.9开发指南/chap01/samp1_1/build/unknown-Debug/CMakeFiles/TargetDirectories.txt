@@ -1,0 +1,9 @@
+/home/Jockey/code/LearningCpp/Qt/Qt5.9开发指南/chap01/samp1_1/build/unknown-Debug/CMakeFiles/samp1_1.dir
+/home/Jockey/code/LearningCpp/Qt/Qt5.9开发指南/chap01/samp1_1/build/unknown-Debug/CMakeFiles/edit_cache.dir
+/home/Jockey/code/LearningCpp/Qt/Qt5.9开发指南/chap01/samp1_1/build/unknown-Debug/CMakeFiles/rebuild_cache.dir
+/home/Jockey/code/LearningCpp/Qt/Qt5.9开发指南/chap01/samp1_1/build/unknown-Debug/CMakeFiles/list_install_components.dir
+/home/Jockey/code/LearningCpp/Qt/Qt5.9开发指南/chap01/samp1_1/build/unknown-Debug/CMakeFiles/install.dir
+/home/Jockey/code/LearningCpp/Qt/Qt5.9开发指南/chap01/samp1_1/build/unknown-Debug/CMakeFiles/install/local.dir
+/home/Jockey/code/LearningCpp/Qt/Qt5.9开发指南/chap01/samp1_1/build/unknown-Debug/CMakeFiles/install/strip.dir
+/home/Jockey/code/LearningCpp/Qt/Qt5.9开发指南/chap01/samp1_1/build/unknown-Debug/CMakeFiles/samp1_1_autogen_timestamp_deps.dir
+/home/Jockey/code/LearningCpp/Qt/Qt5.9开发指南/chap01/samp1_1/build/unknown-Debug/CMakeFiles/samp1_1_autogen.dir
