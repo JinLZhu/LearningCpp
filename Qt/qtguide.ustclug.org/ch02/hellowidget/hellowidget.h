@@ -1,0 +1,15 @@
+#include <qt/QtWidgets/QWidget>
+#include <qt/QtWidgets/QLabel>
+#include <qt/QtWidgets/qlabel.h>
+#include <qt/QtWidgets/qwidget.h>
+
+class HelloWidget : public QWidget
+{
+    Q_OBJECT
+    public:
+        explicit HelloWidget(QWidget *parent = 0);
+        ~HelloWidget();
+        //label
+        QLabel *m_labelInfo;
+};
+
