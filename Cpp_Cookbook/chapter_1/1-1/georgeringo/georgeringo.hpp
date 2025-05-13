@@ -4,9 +4,9 @@
 // define GEORGERIONGO_DLL when building libgerogreringo.dll
 # if defined(_WIN32) && !defined(__GNUC__)
 #   ifdef GEORGERINGO_DLL
-#       define GEORGERINGO_DECL __ declspec(dllexport)
+#       define GEORGERINGO_DECL __declspec(dllexport)
 #   else
-#       define GEORGERINGO_DECL __ declspec(dllimport)
+#       define GEORGERINGO_DECL __declspec(dllimport)
 #   endif
 # endif         // WIN32
 
