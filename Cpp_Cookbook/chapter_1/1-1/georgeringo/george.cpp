@@ -1,7 +1,7 @@
 #include <iostream>
 #include "george.hpp"
 
-void ringo()
+void george()
 {
     std::cout << "and Ringo\n";
 }

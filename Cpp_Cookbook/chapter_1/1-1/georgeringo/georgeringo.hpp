@@ -11,7 +11,7 @@
 # endif         // WIN32
 
 #ifndef GEORGERINGO_DECL
-# define GEOREGRINGO_DECL
+# define GEORGERINGO_DECL
 #endif
         
 // Prints "George, and Ringo\n"

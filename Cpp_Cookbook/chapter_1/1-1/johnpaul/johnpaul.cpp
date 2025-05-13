@@ -5,5 +5,5 @@
 void johnpaul()
 {
     john();
-    paul();
+    Paul();
 }
