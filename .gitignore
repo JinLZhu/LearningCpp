@@ -13,7 +13,6 @@
 
 # 忽略用户特定设置文件
 *.pro.user
-.gitignore
 
 # 忽略构建目录
 build/
@@ -27,4 +26,4 @@ Thumbs.db
 .vscode/
 .idea/
 .gitignore
-.history
+.history/
